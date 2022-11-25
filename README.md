@@ -1,3 +1,3 @@
 # go-boilerplate
 
-boilerplate for my go projects
+Boilerplate for my go projects, inspired by this [structure](https://github.com/golang-standards/project-layout/).
