@@ -7,7 +7,7 @@ docker-build:
 	docker build -f deploy/Dockerfile . -t ${GOLANG_PKG}
 
 docker-run:
-	docker run --env-file ./configs/.env ${GOLANG_PKG}
+	docker run --env-file ${GOLANG_PKG}
 
 docker-all: docker-build docker-run
 
@@ -16,3 +16,6 @@ build:
 
 run:
 	go run ./cmd/${GOLANG_PKG}/main.go
+
+test:
+	go test -v ./...
